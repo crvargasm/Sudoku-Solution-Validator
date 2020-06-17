@@ -2,6 +2,7 @@
  * 
  * Sudoku Solution Validator
  * Autor: Cristian Camilo Vargas Morales
+ * Copyright 2020 - Cristian Camilo Vargas Morales
  * Note: The program annotations are in Spanish Language
 */
 
