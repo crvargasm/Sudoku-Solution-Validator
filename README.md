@@ -20,7 +20,9 @@ Problem:
   This would result in a total of eleven separate threads for validating a Sudoku puzzle. However, you are welcome to create even more threads for this project. For example, rather than creating one thread that checks all nine columns, you could create nine separate threads and have each of them check one column.
 
   #### I. Passing Parameters to Each Thread
-    The parent thread will create the worker threads, passing each worker the location that it must check in the Sudoku grid. This step     will require passing several parameters to each thread. The easiest approach is to create a data structure using a struct. For           example, a structure to pass the row and column where a thread must begin validating would appear as follows:
+      The parent thread will create the worker threads, passing each worker the location that it must check in the Sudoku grid. 
+      This step will require passing several parameters to each thread. The easiest approach is to create a data structure using a 
+      struct. For example, a structure to pass the row and column where a thread must begin validating would appear as follows:
 
         /* structure for passing data to threads */
         typedef struct
@@ -36,7 +38,8 @@ Problem:
         data->column = 1;
         /* Now create the thread passing it data as a parameter */
 
-    The data pointer will be passed to either the pthread create() (Pthreads) function or the CreateThread() (Windows) function, which in turn will pass it as a parameter to the function that is to run as a separate thread.
+    The data pointer will be passed to either the pthread create() (Pthreads) function or the CreateThread() (Windows) function, 
+    which in turn will pass it as a parameter to the function that is to run as a separate thread.
 
   #### II. Returning Results to the Parent Thread
 
